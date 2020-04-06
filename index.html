@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Webdev Dayat</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-
-<h1 style="text-align:center"><b>Our Journey Begins Here</b></h1>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="img/kucing.jpg" alt="" width="358" height="230" /></p>
-<p><b>Hari Pertama</b></p>
-<p><i>Senin, 30 Maret 2020</i></p>
-<p></p>
-  <p> # belajar HTML dasar susunan dari file HTML</p>
-  <p> # cara memasang script javascrip di file HTML</p>
-<p><b>Hari Kedua</b></p>
-<p><i>Selasa, 31 Maret 2020</i></p>
-  <p> # text besar figlet/ASCII </p>
-  <p> # belajar sedikit tentang CSS </p>
-</body>
+<html> 
+<!-- head -->
+    <head>
+        <title>Webdev Dayat</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+<!-- body -->
+    <body>
+        <h2 style="text-align: center;">CatPhotoApp</h2>
+        <main>
+        <a href="https://dayatnhbtc.github.io/"><img style="display: block; margin-left: auto; margin-right: auto;" src="img/kucing.jpg" alt="cat photo" width="358" height="230" /></a>
+        <p><a href="https://dayatnhbtc.github.io/"> Click here </a> to view more cat photos</p>
+        <!--- unordered & ordered list-->
+        <div>
+            <!--unordered list -->
+        <p>Things cats love:</p>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <!--ordered list -->
+        <p>Top 3 things cats hate:</p>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        </div>
+        <!-- Radio Buttons and Checkboxes 
+            Values 
+            Checked 
+            ---
+            Text Field
+            Placeholder
+            Submit button
+        -->
+        <form action="/submit-cat-photo">
+          <label><input value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
+          <label><input value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+          
+          <label><input value="loving" type="checkbox" name="personality"checked> Loving</label>
+          <label><input value="lazy" type="checkbox" name="personality"> Lazy</label>
+          <label><input value="energetic" type="checkbox" name="personality"> Energetic</label><br>
+          
+          <input type="text" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+        </main>
+    </body>
 </html>
