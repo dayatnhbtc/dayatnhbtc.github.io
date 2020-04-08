@@ -1,3 +1,13 @@
-body {background-color: #99d6ff;}
-h1   {color: black;}
-p    {color: black;}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+    color : #20C20E; 
+}
+/*
+body {
+    background-image: url("img/green.png");
+}
+*/
+body {
+    background-color: black;
+}
