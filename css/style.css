@@ -1,7 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
-    color : #20C20E; 
+    color : black; 
 }
 /*
 body {
@@ -9,5 +9,5 @@ body {
 }
 */
 body {
-    background-color: black;
+    background-color: whitesmoke;
 }
