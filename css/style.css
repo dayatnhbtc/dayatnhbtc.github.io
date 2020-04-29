@@ -1,5 +1,13 @@
-body {
+*{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
     color : black; 
+}
+.bn-nama {
+  font-size: 60px;
+  color: green;
+}
+
+.titik {
+  color:red;
 }
