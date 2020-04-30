@@ -1,12 +1,45 @@
-*{
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: red;
+.container {
+  height: auto;
+  width: auto;
+  background-color: #d7d9dbff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-family: Sans-Serif;
 }
-.bn-nama {
-  font-size: 60px;
-  color: green;
+.isi {
+  padding: 15px;
+}
+.foto {
+  text-align: center;
 }
 
-.titik {
-  color:red;
+.foto img {
+  height: 150px;
+}
+
+.about {
+  text-align: center;
+}
+
+.sosmed {
+  text-align: center;
+}
+.sosmed a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.sosmed a:hover{
+  transform: scale(1.3);
+}
+.sosmed a i{
+  color: #333;
+  line-height: 30px;
+}
+
+.sosmed i{
+  color: #333;
+  line-height: 30px;
 }
