@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap');
+
 .container {
   height: auto;
   width: auto;
   background-color: #d7d9dbff;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
-  font-family: Sans-Serif;
 }
 .isi {
   padding: 15px;
@@ -20,9 +21,17 @@
 .about {
   text-align: center;
 }
-
+.about h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+.about p {
+  font-family: 'Open Sans', sans-serif;
+}
 .sosmed {
   text-align: center;
+}
+.sosmed h3 {
+  font-family: 'Roboto Mono', monospace;
 }
 .sosmed a{
   margin: 0 4px;
