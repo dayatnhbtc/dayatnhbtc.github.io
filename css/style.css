@@ -3,7 +3,7 @@
 .container {
   height: auto;
   width: auto;
-  background-color: #d7d9dbff;
+  background-color: linear-gradient(to right, rgb(168, 255, 120), rgb(120, 255, 214));
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
 }
