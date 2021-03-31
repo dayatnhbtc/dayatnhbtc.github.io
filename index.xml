@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hidayatullah</title>
+    <link>https://dayatnhbtc.github.io/</link>
+    <description>Recent content on Hidayatullah</description>
+    <image>
+      <url>https://dayatnhbtc.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://dayatnhbtc.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 31 Mar 2021 09:08:55 +0700</lastBuildDate><atom:link href="https://dayatnhbtc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apa itu flex: auto</title>
+      <link>https://dayatnhbtc.github.io/posts/flex-auto/</link>
+      <pubDate>Wed, 31 Mar 2021 09:08:55 +0700</pubDate>
+      
+      <guid>https://dayatnhbtc.github.io/posts/flex-auto/</guid>
+      <description>Apa itu flex: auto? Ketika Anda menetapkan flex: auto ke suatu element, element tersebut akan meluas untuk mengisi seluruh ruang lebar milik element induknya.
+Cara Menggunakan flex: auto Jika Anda memiliki element yang ingin diluaskan selebar element induk, tetapkan flex: auto.</description>
+    </item>
+    
+    <item>
+      <title>Display Flex</title>
+      <link>https://dayatnhbtc.github.io/posts/display-flex/</link>
+      <pubDate>Wed, 31 Mar 2021 09:08:55 +0700</pubDate>
+      
+      <guid>https://dayatnhbtc.github.io/posts/display-flex/</guid>
+      <description>Apa itu display: flex? Menetapkan display: flex pada element induk akan menumpuk element turunannya secara horizontal.
+Cara Menggunakan display: flex Kapan pun Anda menginginkan item agar bertumpuk secara horizontal, tetapkan display: flex; ke element induk.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://dayatnhbtc.github.io/about/</link>
+      <pubDate>Wed, 31 Mar 2021 09:04:42 +0700</pubDate>
+      
+      <guid>https://dayatnhbtc.github.io/about/</guid>
+      <description>Test</description>
+    </item>
+    
+    <item>
+      <title>Apa itu Flexbox</title>
+      <link>https://dayatnhbtc.github.io/posts/apa-itu-flexbox/</link>
+      <pubDate>Wed, 31 Mar 2021 09:04:42 +0700</pubDate>
+      
+      <guid>https://dayatnhbtc.github.io/posts/apa-itu-flexbox/</guid>
+      <description>Apa Kegunaan Flexbox Dengan Flexbox, Anda dapat dengan mudah membuat layout berbeda seperti gambar di bawah.</description>
+    </item>
+    
+  </channel>
+</rss>
