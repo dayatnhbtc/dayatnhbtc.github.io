@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://dayatnhbtc.github.io/sitemap.xml
