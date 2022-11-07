@@ -1,1 +1,0 @@
-document.write ("Ini adalah sahsatu tulisan saya \r menggunakan banyak line");
