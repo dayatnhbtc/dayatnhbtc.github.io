@@ -47,6 +47,10 @@ a {
     color: #A9A9B3;
 }
 
+main a:hover {
+    text-decoration: underline;
+}
+
 main {
     max-width: 960px;
     margin: 0 auto;
