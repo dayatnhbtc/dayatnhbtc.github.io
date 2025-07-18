@@ -1,15 +1,18 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #232425;
+    color: #A9A9B3;
 }
 
 header {
-    border-bottom: 1px solid #000000;
+    background-color: #1B1C1D;
+    border-bottom: 1px solid #1B1C1D;
 }
 
 nav {
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +22,11 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.logo a {
+    color: #A9A9B3;
+    text-decoration: none;
 }
 
 ul {
@@ -34,10 +42,12 @@ li {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #A9A9B3;
 }
 
 main {
+    max-width: 960px;
+    margin: 0 auto;
     padding: 1rem;
 }
 
