@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Manrope', 'Work Sans', sans-serif;
+    margin: 0;
+    background-color: #232425;
+    color: #A9A9B3;
+}
+
+header {
+    background-color: #1B1C1D;
+    border-bottom: 1px solid #1B1C1D;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo a {
+    color: #A9A9B3;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #A9A9B3;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+hr {
+  border: 0.4px solid #A9A9B3;
+}
+
+.project {
+    margin-bottom: 1rem;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.right-align {
+    text-align: right;
+}
+
