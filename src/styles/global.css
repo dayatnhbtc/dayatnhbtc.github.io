@@ -35,8 +35,8 @@ html, body {
 main { padding: calc(var(--space) * 2) var(--space); }
 
 .foot {
-  max-width: var(--max-w);
-  margin: var(--space) auto calc(var(--space) * 2);
+  padding: 0 var(--space);
+  margin: var(--space) 0 calc(var(--space) * 2);
   color: var(--muted);
   font-size: 0.9rem;
 }
@@ -79,4 +79,3 @@ section { margin: calc(var(--space) * 2) 0; }
 }
 
 .muted { color: var(--muted); }
-
