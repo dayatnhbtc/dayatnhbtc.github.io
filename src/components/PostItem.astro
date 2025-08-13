@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  date: string | Date; // ISO string or Date
+  link: string;
+  description?: string;
+}
+
+const { title, date, link, description } = Astro.props as Props;
+const d = typeof date === 'string' ? new Date(date) : date;
+const formatted = d.toLocaleDateString(undefined, {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+---
+
+<article class="post">
+  <h3 class="post-title">
+    <a href={link} rel="noopener noreferrer">{title}</a>
+  </h3>
+  {description && <p class="post-desc">{description}</p>}
+  <time class="post-date muted" datetime={typeof date === 'string' ? date : d.toISOString()}>{formatted}</time>
+</article>

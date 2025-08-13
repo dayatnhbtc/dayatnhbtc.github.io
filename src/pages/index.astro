@@ -1,29 +1,44 @@
 ---
 import Base from "../layouts/Base.astro";
+import ProjectItem from "../components/ProjectItem.astro";
 
 const name = "Hidayatullah";
 const tagline = "Developer, systems builder, problem solver.";
 const bio = "I like creating practical tools that make work faster, smarter, and easier.";
 
 const projects = [
-  { title: "Project One", description: "Tiny utility that does X swiftly.", link: "#" },
-  { title: "Project Two", description: "Minimal experiment exploring Y.", link: "#" },
-  { title: "Project Three", description: "A neat thing about Z.", link: "#" },
+  {
+    title: "Procurement Cost Calculator",
+    description:
+      "Spreadsheet-based tool to calculate total costs and selling prices for procurement items, with data storage for future reference.",
+    link: "#",
+  },
+  {
+    title: "Order Management System",
+    description:
+      "Internal system using Coda.io to manage procurement orders and streamline purchasing processes.",
+    link: "#",
+  },
+  {
+    title: "Procurement Automation Workflow",
+    description:
+      "Automated procurement workflows by integrating Coda.io with Zoom and Email via n8n.",
+    link: "#",
+  },
 ];
 
 const posts = [
-  { title: "On simplicity", date: "2025-07-01", link: "#" },
-  { title: "Notes on speed", date: "2025-06-10", link: "#" },
-  { title: "Quiet design", date: "2025-05-22", link: "#" },
+  { title: "Building a Procurement Tool", date: "2025-07-01", link: "#" },
+  { title: "Workflow Automation with Coda.io", date: "2025-06-15", link: "#" },
+  { title: "Lessons from E-commerce Operations", date: "2025-05-20", link: "#" },
 ];
 ---
 
 <Base title={`${name} — ${tagline}`} description={bio}>
   <div class="wrap">
     <nav aria-label="Primary">
-      <a href="#about">About</a> /
-      <a href="#projects">Projects</a> /
-      <a href="#blog">Blog</a>
+      <a href="/">About</a> /
+      <a href="/blog">Blog</a>
     </nav>
 
     <section id="about">
@@ -34,25 +49,34 @@ const posts = [
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul class="list">
-        {projects.map((p) => (
-          <li class="item">
-            <strong><a href={p.link} rel="noopener noreferrer">{p.title}</a></strong>
-            — {p.description}
-          </li>
-        ))}
-      </ul>
+      <div class="projects">
+        {projects.map((p) => <ProjectItem {...p} />)}
+      </div>
     </section>
 
-    <section id="blog">
-      <h2>Blog</h2>
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <article class="experience">
+        <h3 class="experience-title">
+          Procurement & Online Operations — PT. Volar Mekanikal Teknologi
+          <span class="muted"> (2023 – Present)</span>
+        </h3>
+        <ul class="list bulleted">
+          <li class="item">Managed Tokopedia & Shopee stores, including order processing, customer service, and product listing updates.</li>
+          <li class="item">Handled product sourcing from both local and international suppliers, ensuring quality, cost-effectiveness, and timely delivery.</li>
+        </ul>
+      </article>
+    </section>
+
+    
+
+    <section id="contact">
+      <h2>Get in touch</h2>
       <ul class="list">
-        {posts.map((post) => (
-          <li class="item">
-            <a href={post.link} rel="noopener noreferrer">{post.title}</a>
-            <span class="muted"> — {new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })}</span>
-          </li>
-        ))}
+        <li class="item"><a href="#" rel="me noopener noreferrer">Twitter</a></li>
+        <li class="item"><a href="#" rel="noopener noreferrer">Email</a></li>
+        <li class="item"><a href="https://github.com/dayatnhbtc" rel="noopener noreferrer">GitHub</a></li>
+        <li class="item"><a href="#" rel="noopener noreferrer">LinkedIn</a></li>
       </ul>
     </section>
   </div>

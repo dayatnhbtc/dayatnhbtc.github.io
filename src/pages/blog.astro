@@ -1,0 +1,29 @@
+---
+import Base from "../layouts/Base.astro";
+import PostItem from "../components/PostItem.astro";
+import { getCollection } from 'astro:content';
+
+const all = await getCollection('posts', (p) => !p.data.draft);
+const toDate = (d: unknown) => (typeof d === 'string' ? new Date(d) : (d as Date));
+const posts = all
+  .sort((a, b) => toDate(b.data.date).getTime() - toDate(a.data.date).getTime())
+  .map((p) => ({
+    title: p.data.title,
+    date: p.data.date,
+    description: p.data.description,
+    link: `/blog/${p.slug}`,
+  }));
+---
+
+<Base title="Blog — Hidayatullah" description="All posts by Hidayatullah">
+  <div class="wrap">
+    <nav aria-label="Primary">
+      <a href="/">About</a> /
+      <a href="/blog">Blog</a>
+    </nav>
+    <h1>Blog</h1>
+    <div class="posts">
+      {posts.map((p) => <PostItem {...p} />)}
+    </div>
+  </div>
+</Base>
