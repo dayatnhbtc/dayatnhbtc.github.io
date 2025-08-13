@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/Base.astro";
+
+const name = "Hidayatullah";
+const tagline = "Developer, systems builder, problem solver.";
+const bio = "I like creating practical tools that make work faster, smarter, and easier.";
+
+const projects = [
+  { title: "Project One", description: "Tiny utility that does X swiftly.", link: "#" },
+  { title: "Project Two", description: "Minimal experiment exploring Y.", link: "#" },
+  { title: "Project Three", description: "A neat thing about Z.", link: "#" },
+];
+
+const posts = [
+  { title: "On simplicity", date: "2025-07-01", link: "#" },
+  { title: "Notes on speed", date: "2025-06-10", link: "#" },
+  { title: "Quiet design", date: "2025-05-22", link: "#" },
+];
+---
+
+<Base title={`${name} — ${tagline}`} description={bio}>
+  <div class="wrap">
+    <nav aria-label="Primary">
+      <a href="#about">About</a> /
+      <a href="#projects">Projects</a> /
+      <a href="#blog">Blog</a>
+    </nav>
+
+    <section id="about">
+      <h1>{name}</h1>
+      <span class="kicker">{tagline}</span>
+      <p>{bio}</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="list">
+        {projects.map((p) => (
+          <li class="item">
+            <strong><a href={p.link} rel="noopener noreferrer">{p.title}</a></strong>
+            — {p.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <ul class="list">
+        {posts.map((post) => (
+          <li class="item">
+            <a href={post.link} rel="noopener noreferrer">{post.title}</a>
+            <span class="muted"> — {new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</Base>
