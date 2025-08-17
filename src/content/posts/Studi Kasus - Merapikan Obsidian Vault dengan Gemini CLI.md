@@ -1,4 +1,6 @@
 ---
+title: "Studi Kasus: Merapikan Obsidian Vault dengan Gemini CLI"
+description: "Bagaimana saya merapikan Obsidian Vault dari nol dengan bantuan Gemini CLI: pembersihan, pengkategorian, linking, MOC, dan refactoring folder proyek."
 tags: blog, obsidian, gemini, pkm
 date: 2025-08-16
 ---
