@@ -99,6 +99,7 @@ section { margin: calc(var(--space) * 2) 0; }
   gap: 0.5rem 1rem;
 }
 #contact .item { margin: 0; }
+#contact h2 { color: var(--text); }
 
 /* Posts list */
 .posts {
