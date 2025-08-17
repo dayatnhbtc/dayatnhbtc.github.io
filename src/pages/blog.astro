@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Nav from "../components/Nav.astro";
 import PostItem from "../components/PostItem.astro";
 import { getCollection } from 'astro:content';
 
@@ -17,10 +18,7 @@ const posts = all
 
 <Base title="Blog — Hidayatullah" description="All posts by Hidayatullah">
   <div class="wrap">
-    <nav aria-label="Primary">
-      <a href="/">About</a> /
-      <a href="/blog">Blog</a>
-    </nav>
+    <Nav />
     <h1>Blog</h1>
     <div class="posts">
       {posts.map((p) => <PostItem {...p} />)}

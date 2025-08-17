@@ -1,0 +1,17 @@
+---
+import { site } from '../site';
+const path = Astro.url.pathname;
+const isBlog = path.startsWith('/blog');
+---
+<nav aria-label="Primary" class="topnav">
+  <a href="/" class="brand">{site.brand}</a>
+  <div class="links">
+    <a href="/blog" class:list={{ active: isBlog }}>Blog</a>
+    <button id="theme-toggle" class="toggle" aria-label="Toggle theme" type="button">
+      <img src="/moon.svg" alt="" class="icon moon" aria-hidden="true" />
+      <img src="/sun.svg" alt="" class="icon sun" aria-hidden="true" />
+    </button>
+  </div>
+  
+</nav>
+

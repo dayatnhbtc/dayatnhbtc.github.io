@@ -1,0 +1,32 @@
+/* Theme tokens: light (default), dark, with data-theme overrides */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #6b7280;
+  --accent: #006CAC; /* light mode accent */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #fca311; /* dark mode accent */
+  }
+}
+
+/* Manual theme override via data-theme on html */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #6b7280;
+  --accent: #006CAC;
+}
+
+[data-theme="dark"] {
+  --bg: #000000;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #fca311;
+}
+

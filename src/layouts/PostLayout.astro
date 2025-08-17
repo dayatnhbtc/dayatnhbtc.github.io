@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import Nav from "../components/Nav.astro";
 
 interface Props {
   title: string;
@@ -16,9 +17,7 @@ const formatted = d.toLocaleDateString(undefined, {
 
 <Base title={`${title} — Hidayatullah`} description={description ?? title}>
   <div class="wrap">
-    <nav aria-label="Breadcrumbs" class="muted">
-      <a href="/">About</a> / <a href="/blog">Blog</a>
-    </nav>
+    <Nav />
     <article class="post-article">
       <header>
         <h1 class="post-h1">{title}</h1>
@@ -34,10 +33,11 @@ const formatted = d.toLocaleDateString(undefined, {
 
 <style>
 .post-article { margin-top: 0.5rem; }
-.post-h1 { margin: 0 0 0.25rem; font-size: clamp(1.6rem, 3.6vw, 2.2rem); }
+.post-h1 { margin: 0 0 0.25rem; font-size: clamp(1.35rem, 3vw, 1.9rem); }
 .post-meta { color: var(--muted); font-size: 0.9rem; }
 .post-summary { color: color-mix(in oklab, var(--text) 85%, transparent); margin: 0.5rem 0 1rem; }
 .post-content :is(p, ul, ol, pre, blockquote) { margin: 0 0 var(--space); }
+.post-content :global(h1) { font-size: clamp(1.35rem, 3vw, 1.9rem); margin: 0 0 var(--space); }
 .post-content code { background: color-mix(in oklab, var(--text) 8%, transparent); padding: 0.05em 0.3em; border-radius: 4px; }
 .post-content pre { padding: 0.75rem; border-radius: var(--radius); overflow: auto; }
 .post-content blockquote { border-left: 2px solid color-mix(in oklab, var(--text) 20%, transparent); padding-left: 0.75rem; color: var(--muted); }
